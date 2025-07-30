@@ -1,0 +1,260 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop — Мужская парикмахерская</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="logo">BARBERSHOP</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                    <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="#appointment" class="button">Записаться онлайн</a>
+                <button class="burger" aria-label="Открыть меню">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__overlay"></div>
+            <div class="container hero__container">
+                <h1 class="hero__title">BARBERSHOP</h1>
+                <p class="hero__subtitle">Первый мужской салон премиум-класса, созданный специально для мужчин</p>
+                <a href="#appointment" class="button">Записаться онлайн</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Услуги и цены</h2>
+                <div class="tabs">
+                    <div class="tabs__nav">
+                        <button class="tabs__button tabs__button--active" data-tab="barber">Барбер</button>
+                        <button class="tabs__button" data-tab="senior-barber">Старший барбер</button>
+                        <button class="tabs__button" data-tab="promo">Акции %</button>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="tabs__pane tabs__pane--active" id="barber">
+                            <ul class="service-list">
+                                <li class="service-list__item">
+                                    <div class="service-list__info">
+                                        <h3>Стрижка</h3>
+                                        <p>Классическая мужская стрижка, выполненная с использованием машинки и ножниц</p>
+                                    </div>
+                                    <div class="service-list__price-info">
+                                        <span class="service-list__time">60 мин</span>
+                                        <span class="service-list__price">2000 тг</span>
+                                    </div>
+                                </li>
+                                <li class="service-list__item">
+                                    <div class="service-list__info">
+                                        <h3>Стрижка бороды и усов</h3>
+                                        <p>Моделирование и коррекция бороды с использованием опасной бритвы</p>
+                                    </div>
+                                    <div class="service-list__price-info">
+                                        <span class="service-list__time">45 мин</span>
+                                        <span class="service-list__price">1500 тг</span>
+                                    </div>
+                                </li>
+                                <li class="service-list__item">
+                                    <div class="service-list__info">
+                                        <h3>Королевское бритье</h3>
+                                        <p>Бритье опасной бритвой с распариванием и косметическим уходом</p>
+                                    </div>
+                                    <div class="service-list__price-info">
+                                        <span class="service-list__time">50 мин</span>
+                                        <span class="service-list__price">1800 тг</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabs__pane" id="senior-barber">
+                             <ul class="service-list">
+                                <li class="service-list__item">
+                                    <div class="service-list__info">
+                                        <h3>Стрижка</h3>
+                                        <p>Индивидуальный подбор стиля и стрижка от ведущего мастера салона</p>
+                                    </div>
+                                    <div class="service-list__price-info">
+                                        <span class="service-list__time">75 мин</span>
+                                        <span class="service-list__price">3000 тг</span>
+                                    </div>
+                                </li>
+                                <li class="service-list__item">
+                                    <div class="service-list__info">
+                                        <h3>Комплекс "Стрижка + Борода"</h3>
+                                        <p>Полный уход за вашим образом: стрижка и моделирование бороды</p>
+                                    </div>
+                                    <div class="service-list__price-info">
+                                        <span class="service-list__time">90 мин</span>
+                                        <span class="service-list__price">4000 тг</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabs__pane" id="promo">
+                            <ul class="service-list">
+                                <li class="service-list__item">
+                                    <div class="service-list__info">
+                                        <h3>"Отец и сын"</h3>
+                                        <p>Две стрижки по специальной цене. Приходите вместе!</p>
+                                    </div>
+                                    <div class="service-list__price-info">
+                                        <span class="service-list__time">120 мин</span>
+                                        <span class="service-list__price">3500 тг</span>
+                                    </div>
+                                </li>
+                                <li class="service-list__item">
+                                    <div class="service-list__info">
+                                        <h3>Первый визит</h3>
+                                        <p>Скидка 20% на любую услугу для новых клиентов</p>
+                                    </div>
+                                    <div class="service-list__price-info">
+                                        <span class="service-list__time">-</span>
+                                        <span class="service-list__price">-20%</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__container">
+                <div class="about__text-content">
+                    <h2 class="section-title section-title--light">Барбершоп</h2>
+                    <p>Мы не просто стрижем. Мы создаем стиль и поддерживаем традиции классического мужского груминга. Наша команда — это профессионалы, влюбленные в свое дело. Мы используем только лучшую косметику и инструменты, чтобы вы получили безупречный результат и настоящее удовольствие от процесса.</p>
+                </div>
+                <div class="about__image">
+                    <img src="https://picsum.photos/seed/barber-inside/800/600" alt="Интерьер барбершопа">
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container stats__container">
+                <div class="stats__item">
+                    <span class="stats__number">7+</span>
+                    <span class="stats__label">лет на рынке</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__number">9</span>
+                    <span class="stats__label">барберов в работе</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__number">150+</span>
+                    <span class="stats__label">наград и дипломов</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__number">347+</span>
+                    <span class="stats__label">отзывов</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы</h2>
+                <div class="reviews__grid">
+                    <div class="review-card">
+                        <img src="https://picsum.photos/seed/avatar1/100/100" alt="Аватар клиента" class="review-card__avatar">
+                        <h3 class="review-card__name">Константин В.</h3>
+                        <span class="review-card__date">15.06.2024</span>
+                        <p class="review-card__text">"Лучшее место в городе! Мастера — настоящие профи. Атмосфера на высоте. Возвращаюсь снова и снова."</p>
+                    </div>
+                     <div class="review-card">
+                        <img src="https://picsum.photos/seed/avatar2/100/100" alt="Аватар клиента" class="review-card__avatar">
+                        <h3 class="review-card__name">Алексей Смирнов</h3>
+                        <span class="review-card__date">02.06.2024</span>
+                        <p class="review-card__text">"Отличный сервис и внимание к деталям. Стрижка бороды просто идеальна. Рекомендую!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointment" class="appointment">
+            <div class="container">
+                <h2 class="section-title">Записаться онлайн</h2>
+                <p class="appointment__subtitle">Выберите удобное время и своего мастера</p>
+                <form class="appointment-form">
+                    <input type="text" placeholder="Ваше имя" required class="appointment-form__input">
+                    <input type="tel" placeholder="Ваш телефон" required class="appointment-form__input">
+                    <select class="appointment-form__input">
+                        <option value="">Выберите услугу</option>
+                        <option value="haircut">Стрижка</option>
+                        <option value="beard">Стрижка бороды</option>
+                        <option value="combo">Комплекс</option>
+                    </select>
+                    <button type="submit" class="button">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__column">
+                <h4 class="footer__title">График работы</h4>
+                <p>Пн - Вс: 10:00 - 22:00</p>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__title">Контакты</h4>
+                <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                <p><a href="mailto:hello@barbershop.com">hello@barbershop.com</a></p>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__title">Адрес</h4>
+                <p>г. Москва, ул. Тверская, д. 1</p>
+                <a href="contacts.html#map">Посмотреть на карте</a>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__title">Мы в соцсетях</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9 26.3 26.2 58 34.4 93.9 36.2 37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook" title="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" aria-hidden="true" focusable="false">
+                            <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Vkontakte" title="Vkontakte">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" aria-hidden="true" focusable="false">
+                            <path d="M545 117.7c-11.3-13.5-30.7-19.4-46.1-15.9-16.8 3.8-27.6 18.2-33.7 30.3-22.3 45.1-41.5 83.2-76.3 111.8-14 11.5-24.8 19.8-32.9 24.1-19.8 10.6-35.9 16.2-50.5 16.2-3.6 0-6.4-1.4-11.4-7.2-5-5.8-9.4-13.8-10.8-21.1-1.6-8.5.2-16.6 5.3-25.7 3.9-7.2 11.2-15.2 20.4-23.3 22.2-19.6 39-38.1 52.8-57.3 13.8-19.2 21.4-38.3 22.3-56.5.9-18.2-2.7-34.3-10.8-48.3-8.1-14-19.4-21.7-33.7-21.7-16.8 0-30.7 7.2-41.5 21.7-10.8 14.5-16.2 31.7-16.2 51.5 0 8.5.7 15.6 2.1 21.1 1.4 5.5 4.1 12.1 8.1 19.8 4 7.7 7.4 15.1 10.1 22.3-6.5-7.7-12.8-15.6-25-15.6-12 0-21.1 6.1-27.6 18.2-6.5 12.2-9.7 25.7-9.7 40.6 0 14.9 3.2 28.7 9.7 41.5 6.5 12.8 15.8 22.3 27.6 28.4 11.8 6.1 25.1 9.2 39.8 9.2 28.5 0 49.3-9.9 62.4-29.8 13.1-19.8 19.7-45.4 19.7-76.7 0-25.1-4.7-50.9-14.1-77.4-9.4-26.5-23.7-51.5-42.8-75-19.1-23.5-42.1-43.4-68.9-59.8-26.8-16.4-53.7-24.5-80.5-24.5-22.1 0-41.2-5.4-57.3-16.2-16.1-10.8-25.1-25.4-27-43.7-.9-13.5 2.1-26.5 9-38.8 3.9-6.8 9.9-12.4 18.2-16.7 8.3-4.3 16.5-6.4 24.5-6.4 8 0 14.9 2.3 20.7 7 5.8 4.7 8.7 10.8 8.7 18.2 0 10.3-2.6 19.4-7.8 27.3-5.2 7.9-12.5 14.4-21.9 19.6-6.8 3.9-12.5 5.8-17 5.8-4.5 0-9.2-2.1-14.1-6.4-4.9-4.3-7.4-10.1-7.4-17.3 0-16.8 11.5-40.3 34.3-70.4 14.4-18.7 30.2-36.3 47.3-52.8C287.8 53.5 303.9 39.4 316 29.3c12.1-10.1 24.6-15.2 37.6-15.2 13 0 23.1 4.3 30.3 12.8s10.8 19.6 10.8 33.2c0 14.9-3.4 29.3-10.1 43.1-6.8 13.8-15.9 25.4-27.6 34.9-11.7 9.5-25.1 16.8-40.3 21.9-15.2 5-31.1 7.6-47.5 7.6-22.1 0-40.3-3.9-54.8-11.8-14.5-7.9-25.4-19.4-32.9-34.6-7.5-15.2-11.2-33.2-11.2-54.1 0-22.3 4.5-42.8 13.5-61.5C65.8 32.8 79.2 17.1 96.6 8.5 114 0 133.4 0 151.6 4.3c18.2 4.3 33.2 12.1 44.9 23.3 11.7 11.2 20.3 25.9 25.6 44.1 5.4 18.2 8.1 38.3 8.1 60.2 0 21.4-3.4 42.1-10.1 62.1-6.8 20-16.4 38.1-28.7 54.1-12.4 16.1-26.8 29.4-43.4 40.1-16.5 10.6-34.1 16-52.8 16-21.6 0-41.9-5.9-61-17.6-19.1-11.8-33.2-27.9-42.3-48.3-9-20.4-13.6-44-13.6-70.6 0-28.7 6.1-53.7 18.2-75C30.6 28.2 46.1 13.2 65.7 4.3 85.4 0 105.8 0 125.1 4.3c19.3 4.3 36.3 12.4 51 24.2 14.7 11.8 26.3 27.6 34.6 47.5 8.3 19.8 12.5 42.8 12.5 68.9 0 32.1-6.8 61.7-20.4 88.6-13.5 26.8-33.7 48.9-60.5 66.3-26.8 17.4-58 26.1-93.4 26.1-29.3 0-56.3-6.8-81.1-20.4-24.8-13.5-44.9-32.9-60.2-58-15.3-25.1-23-53.7-23-85.7 0-53.4 11.3-91.1 34.3-117.2C57.1 17.7 88.1 4.3 127.2 4.3c22.1 0 42.1 4.5 59.9 13.5 17.9 9 31.9 22.1 42.3 39.1 10.3 17.1 15.5 37.9 15.5 62.4 0 27.3-5.5 52.5-16.4 75.4-10.9 22.9-25.9 42.3-44.9 58-19 15.7-40.3 27.3-63.7 34.6-23.4 7.3-47.5 11-72.1 11-48.2 0-89.9-12.7-125.1-38.1-35.2-25.4-52.8-61.4-52.8-108.1 0-53.4 14.4-97.9 43.4-132.6S110.4 0 157.5 0c50.3 0 91.4 14.7 123.1 44.1 31.7 29.4 47.5 67.5 47.5 114.2 0 44.9-10.6 86.4-31.7 124.7-21.1 38.3-49.3 69.5-84.6 93.4-35.3 23.9-74.5 35.8-117.7 35.8-32.9 0-64.2-6.1-93.7-18.2-29.5-12.2-53.7-29.8-72.6-53-18.9-23.2-28.4-50.6-28.4-82.3 0-41.8 13.8-77.8 41.5-108s62.1-45.2 103.2-45.2c24.5 0 46.1 7.2 64.8 21.7s27.9 34.9 27.9 61.3c0 13-2.6 25.1-7.8 36.3-5.2 11.2-12.2 20.3-21.1 27.3s-18.9 10.6-29.8 10.6c-13.8 0-25.7-4.1-35.8-12.2-10.1-8.1-15.2-18.4-15.2-30.7 0-14.9 4.7-28.7 14.1-41.5 9.4-12.8 21.4-22.3 35.8-28.4 14.4-6.1 30.2-9.2 47.3-9.2 33.7 0 59.9 10.3 78.5 30.8 18.6 20.5 27.9 46.8 27.9 78.8 0 23.2-5.5 45.4-16.4 66.8-10.9 21.4-25.4 39.1-43.4 53-18.1 13.8-38.6 20.8-61.5 20.8-24.2 0-46.8-6.1-67.8-18.2-21.1-12.2-37.4-29.3-48.9-51.5-11.5-22.1-17.3-46.8-17.3-73.9 0-38.3 11.5-70.9 34.3-97.7 22.9-26.8 52.5-40.3 88.9-40.3 32.4 0 59.4 9.2 80.8 27.6 21.4 18.4 32.1 43.7 32.1 75.9z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2025 Barbershop. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
